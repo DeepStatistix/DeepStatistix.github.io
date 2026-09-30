@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dr. Aqib Gul · Statistician & Forecasting Researcher</title>
-<meta name="description" content="Dr. Aqib Gul, PhD Statistics. Research on forecasting for decisions under uncertainty: agricultural market intelligence, river-flow forecasting, ensemble learning and design-aware statistical inference.">
-<meta property="og:title" content="Dr. Aqib Gul · Forecasting for decisions under uncertainty">
-<meta property="og:description" content="Statistician building forecasts that people can act on: 78 price series, 25 markets, live since 2025.">
+<title>Dr. Aqib Gul · Statistician & Data Scientist</title>
+<meta name="description" content="Dr. Aqib Gul, PhD Statistics. Statistician, data scientist and machine-learning researcher: forecasting, statistical consulting, deep learning, deployed ML systems and teaching.">
+<meta property="og:title" content="Dr. Aqib Gul · Statistician, Data Scientist & ML Researcher">
+<meta property="og:description" content="Statistics, machine learning and AI that people can act on: research, deployed systems, consulting and teaching.">
 <meta property="og:image" content="https://deepstatistix.github.io/assets/aqib.jpg">
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f2a44'/%3E%3Cpath d='M10 44 L22 36 L32 40 L42 26' stroke='%23e8b04a' stroke-width='5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M42 26 L54 14 L54 34 Z' fill='%2327b3a3' opacity='.8'/%3E%3C/svg%3E">
@@ -16,69 +16,72 @@
 <style>
 :root{
   --bg:#f7f5f0; --bg-2:#ffffff; --ink:#13202e; --ink-2:#4a5968; --line:#e2ddd2;
-  --navy:#0f2a44; --teal:#1f9a8c; --gold:#c9902c; --accent:#1f9a8c;
-  --chip:#ece7dc; --band1:rgba(31,154,140,.14); --band2:rgba(31,154,140,.26);
+  --navy:#0f2a44; --teal:#1f9a8c; --gold:#b98224; --chip:#ece7dc;
+  --band1:rgba(31,154,140,.14); --band2:rgba(31,154,140,.26);
   --shadow:0 1px 2px rgba(15,42,68,.06),0 8px 24px rgba(15,42,68,.06);
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
     --bg:#0b1622; --bg-2:#112131; --ink:#e8eef4; --ink-2:#9fb0c1; --line:#1f3347;
-    --navy:#dce8f3; --teal:#3cc7b6; --gold:#e8b04a; --accent:#3cc7b6;
-    --chip:#172b3f; --band1:rgba(60,199,182,.14); --band2:rgba(60,199,182,.28);
+    --navy:#dce8f3; --teal:#3cc7b6; --gold:#e8b04a; --chip:#172b3f;
+    --band1:rgba(60,199,182,.14); --band2:rgba(60,199,182,.28);
     --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.25);
   }
 }
 :root[data-theme="dark"]{
   --bg:#0b1622; --bg-2:#112131; --ink:#e8eef4; --ink-2:#9fb0c1; --line:#1f3347;
-  --navy:#dce8f3; --teal:#3cc7b6; --gold:#e8b04a; --accent:#3cc7b6;
-  --chip:#172b3f; --band1:rgba(60,199,182,.14); --band2:rgba(60,199,182,.28);
+  --navy:#dce8f3; --teal:#3cc7b6; --gold:#e8b04a; --chip:#172b3f;
+  --band1:rgba(60,199,182,.14); --band2:rgba(60,199,182,.28);
   --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.25);
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:72px}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
 a{color:inherit}
-.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
 h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:700;line-height:1.15;margin:0;color:var(--navy)}
 h2{font-size:clamp(1.7rem,3.2vw,2.3rem);margin-bottom:.4rem}
-.kicker{font:500 .78rem/1 "JetBrains Mono",monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);margin-bottom:.8rem}
-.lede{color:var(--ink-2);max-width:62ch;margin:.2rem 0 2rem}
-section{padding:84px 0;border-top:1px solid var(--line)}
+.kicker{font:500 .78rem/1.3 "JetBrains Mono",monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);margin-bottom:.8rem}
+.lede{color:var(--ink-2);max-width:64ch;margin:.2rem 0 2rem}
+section{padding:80px 0;border-top:1px solid var(--line)}
+section.alt{background:color-mix(in srgb,var(--bg-2) 55%,var(--bg))}
 
 /* nav */
 header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .nav{display:flex;align-items:center;justify-content:space-between;height:60px;gap:12px}
 .brand{font:700 1.05rem Fraunces,serif;text-decoration:none;color:var(--navy);white-space:nowrap}
 .brand span{color:var(--gold)}
-.links{display:flex;gap:22px;font-size:.9rem}
+.links{display:flex;gap:20px;font-size:.88rem}
 .links a{text-decoration:none;color:var(--ink-2)}
 .links a:hover{color:var(--ink)}
-.theme{border:1px solid var(--line);background:var(--bg-2);color:var(--ink);border-radius:999px;width:36px;height:36px;cursor:pointer;font-size:1rem}
-@media (max-width:760px){.links{display:none}}
+.theme{border:1px solid var(--line);background:var(--bg-2);color:var(--ink);border-radius:999px;width:36px;height:36px;cursor:pointer;font-size:1rem;flex:none}
+@media (max-width:900px){.links{display:none}}
 
 /* hero */
-.hero{padding:72px 0 56px;border-top:0}
-.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:48px;align-items:center}
-.hero h1{font-size:clamp(2.3rem,5.4vw,3.8rem);letter-spacing:-.01em}
+.hero{padding:68px 0 56px;border-top:0}
+.hero-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(2.2rem,5vw,3.6rem);letter-spacing:-.01em}
 .hero h1 em{font-style:normal;color:var(--teal)}
-.hero .sub{font-size:1.12rem;color:var(--ink-2);margin:1.1rem 0 1.6rem;max-width:56ch}
+.hero .sub{font-size:1.1rem;color:var(--ink-2);margin:1.1rem 0 1.2rem;max-width:58ch}
+.roles{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:1.5rem}
+.roles span{font:500 .8rem Inter,sans-serif;padding:5px 12px;border-radius:999px;border:1px solid var(--line);background:var(--bg-2);color:var(--ink-2)}
 .photo{position:relative;justify-self:center}
 .photo img{width:min(280px,70vw);aspect-ratio:1;object-fit:cover;border-radius:28px;box-shadow:var(--shadow);display:block}
 .photo::after{content:"";position:absolute;inset:14px -14px -14px 14px;border:2px solid var(--gold);border-radius:28px;z-index:-1}
 .btns{display:flex;flex-wrap:wrap;gap:10px}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:12px;font-weight:600;font-size:.93rem;text-decoration:none;border:1px solid var(--line);background:var(--bg-2)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:12px;font-weight:600;font-size:.92rem;text-decoration:none;border:1px solid var(--line);background:var(--bg-2)}
 .btn.primary{background:var(--navy);color:var(--bg);border-color:var(--navy)}
 .btn:hover{transform:translateY(-1px)}
 .btn svg{width:18px;height:18px}
 @media (max-width:820px){.hero-grid{grid-template-columns:1fr}.photo{order:-1}}
 
-/* forecast strip */
-.fan{margin-top:48px;background:var(--bg-2);border:1px solid var(--line);border-radius:18px;padding:18px 18px 10px;box-shadow:var(--shadow)}
+/* fan chart */
+.fan{margin-top:44px;background:var(--bg-2);border:1px solid var(--line);border-radius:18px;padding:16px 18px 8px;box-shadow:var(--shadow)}
 .fan-head{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-size:.82rem;color:var(--ink-2)}
 .fan-head b{color:var(--ink);font-weight:600}
 .legend{display:flex;gap:14px;flex-wrap:wrap}
 .legend i{display:inline-block;width:14px;height:8px;border-radius:2px;margin-right:6px;vertical-align:middle}
-#fanchart{width:100%;height:170px;display:block}
+#fanchart{width:100%;height:150px;display:block}
 .draw{stroke-dasharray:var(--len);stroke-dashoffset:var(--len);animation:draw 2.2s ease forwards}
 @keyframes draw{to{stroke-dashoffset:0}}
 .fade{opacity:0;animation:fade 1s ease 1.9s forwards}
@@ -86,56 +89,67 @@ header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 8
 @media (prefers-reduced-motion:reduce){.draw,.fade{animation:none;stroke-dashoffset:0;opacity:1}}
 
 /* stats */
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:22px}
-.stat{background:var(--bg-2);border:1px solid var(--line);border-radius:14px;padding:16px}
-.stat b{display:block;font:700 1.75rem Fraunces,serif;color:var(--navy)}
-.stat span{font-size:.84rem;color:var(--ink-2)}
-@media (max-width:760px){.stats{grid-template-columns:repeat(2,1fr)}}
+.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:20px}
+.stat{background:var(--bg-2);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.stat b{display:block;font:700 1.7rem Fraunces,serif;color:var(--navy)}
+.stat span{font-size:.82rem;color:var(--ink-2)}
+@media (max-width:900px){.stats{grid-template-columns:repeat(2,1fr)}.stat:last-child{grid-column:1/-1}}
 
-/* themes */
-.themes{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.theme-card{background:var(--bg-2);border:1px solid var(--line);border-radius:16px;padding:22px}
-.theme-card .n{font:500 .8rem "JetBrains Mono",monospace;color:var(--gold)}
-.theme-card h3{font-size:1.2rem;margin:.4rem 0 .5rem}
-.theme-card p{margin:0;color:var(--ink-2);font-size:.95rem}
-@media (max-width:820px){.themes{grid-template-columns:1fr}}
+/* expertise */
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media (max-width:900px){.grid3{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.grid3{grid-template-columns:1fr}}
+.box{background:var(--bg-2);border:1px solid var(--line);border-radius:16px;padding:22px}
+.box .ic{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:var(--chip);color:var(--teal);margin-bottom:12px}
+.box .ic svg{width:22px;height:22px}
+.box h3{font-size:1.12rem;margin-bottom:.4rem}
+.box p{margin:0 0 .8rem;color:var(--ink-2);font-size:.93rem}
 
-/* featured */
-.flag{display:grid;grid-template-columns:1fr 1fr;gap:0;background:var(--bg-2);border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:var(--shadow);margin-bottom:22px}
-.flag .l{padding:30px;background:var(--navy);color:var(--bg)}
-.flag .l h3{color:var(--bg);font-size:1.6rem}
-.flag .l .kicker{color:var(--gold)}
-.flag .l p{opacity:.88}
+/* featured research */
+.flag{display:grid;grid-template-columns:1fr 1fr;background:var(--bg-2);border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:var(--shadow);margin-bottom:22px}
+.flag .l{padding:30px;background:#0f2a44;color:#f3f1ea}
+.flag .l h3{color:#fff;font-size:1.55rem}
+.flag .l .kicker{color:#e8b04a}
+.flag .l p{opacity:.9}
+.flag .l a{color:#7fe0d3;font-weight:600;text-decoration:none}
 .flag .r{padding:30px}
 .flag ul{margin:.4rem 0 0;padding-left:1.1rem}
 .flag li{margin:.35rem 0}
-.mini{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px}
-.mini div{border:1px solid color-mix(in srgb,var(--bg) 30%,transparent);border-radius:12px;padding:10px}
-.mini b{display:block;font:700 1.35rem Fraunces,serif;color:var(--gold)}
-.mini span{font-size:.78rem;opacity:.85}
+.mini{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:18px 0}
+.mini div{border:1px solid rgba(255,255,255,.18);border-radius:12px;padding:10px}
+.mini b{display:block;font:700 1.3rem Fraunces,serif;color:#e8b04a}
+.mini span{font-size:.76rem;opacity:.85}
 @media (max-width:820px){.flag{grid-template-columns:1fr}}
 .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
-.card{background:var(--bg-2);border:1px solid var(--line);border-radius:16px;padding:22px;display:flex;flex-direction:column;transition:transform .15s,box-shadow .15s}
+.cards.three{grid-template-columns:repeat(3,1fr)}
+@media (max-width:900px){.cards.three{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.cards,.cards.three{grid-template-columns:1fr}}
+.card{background:var(--bg-2);border:1px solid var(--line);border-radius:16px;padding:20px;display:flex;flex-direction:column;transition:transform .15s,box-shadow .15s}
 .card:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
-.venue{font:500 .76rem "JetBrains Mono",monospace;color:var(--teal);letter-spacing:.04em}
-.card h3{font-size:1.18rem;margin:.45rem 0 .5rem}
-.card p{margin:0 0 .8rem;color:var(--ink-2);font-size:.94rem}
+.venue{font:500 .74rem "JetBrains Mono",monospace;color:var(--teal);letter-spacing:.04em;text-transform:uppercase}
+.card h3{font-size:1.1rem;margin:.45rem 0 .45rem}
+.card p{margin:0 0 .8rem;color:var(--ink-2);font-size:.92rem}
 .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto}
 .tag{font-size:.74rem;background:var(--chip);border-radius:999px;padding:3px 10px;color:var(--ink-2)}
-.card .go{margin-top:12px;font-size:.88rem;font-weight:600;color:var(--teal);text-decoration:none}
-@media (max-width:760px){.cards{grid-template-columns:1fr}}
+.go{margin-top:12px;font-size:.87rem;font-weight:600;color:var(--teal);text-decoration:none}
+.go+.go{margin-left:14px}
 
-/* publications */
+/* filters */
 .filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
 .filters button{border:1px solid var(--line);background:var(--bg-2);color:var(--ink-2);padding:7px 14px;border-radius:999px;font:500 .85rem Inter,sans-serif;cursor:pointer}
 .filters button.on{background:var(--navy);color:var(--bg);border-color:var(--navy)}
+.filters button span{opacity:.7;margin-left:4px}
+
+/* publications */
 .pubs{list-style:none;margin:0;padding:0}
-.pubs li{padding:14px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:64px 1fr;gap:14px}
-.pubs .y{font:500 .85rem "JetBrains Mono",monospace;color:var(--gold);padding-top:2px}
+.pubs li{padding:13px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:70px 1fr;gap:14px}
+.pubs .y{font:500 .82rem "JetBrains Mono",monospace;color:var(--gold);padding-top:3px}
 .pubs .t{font-weight:600}
-.pubs .a{color:var(--ink-2);font-size:.9rem}
+.pubs .a{color:var(--ink-2);font-size:.89rem}
 .pubs .a b{color:var(--ink)}
-.pubs a{color:var(--teal);font-size:.86rem;font-weight:600;text-decoration:none;margin-right:12px}
+.pubs a{color:var(--teal);font-size:.84rem;font-weight:600;text-decoration:none;margin-right:12px}
+.badge{display:inline-block;font:500 .68rem "JetBrains Mono",monospace;padding:1px 7px;border-radius:6px;background:var(--chip);color:var(--ink-2);margin-left:6px;vertical-align:2px}
+.more{margin-top:14px;border:1px solid var(--line);background:var(--bg-2);color:var(--ink);padding:9px 16px;border-radius:10px;font:600 .88rem Inter,sans-serif;cursor:pointer}
 
 /* timeline */
 .two{display:grid;grid-template-columns:1fr 1fr;gap:40px}
@@ -144,20 +158,30 @@ header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 8
 .tl li{position:relative;margin-bottom:26px}
 .tl li::before{content:"";position:absolute;left:-29px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--bg);border:3px solid var(--teal)}
 .tl .when{font:500 .78rem "JetBrains Mono",monospace;color:var(--ink-2)}
-.tl h3{font-size:1.06rem;margin:.2rem 0 .3rem}
-.tl p{margin:0;color:var(--ink-2);font-size:.93rem}
+.tl h3{font-size:1.05rem;margin:.2rem 0 .1rem}
+.tl .org{font-size:.88rem;color:var(--teal);font-weight:500;margin-bottom:.3rem}
+.tl p,.tl ul{margin:0;color:var(--ink-2);font-size:.92rem}
+.tl ul{padding-left:1rem}
+.tl ul li{margin:.2rem 0}
+.tl ul li::before{display:none}
 h3.col{font-size:1.25rem;margin-bottom:1.2rem}
 
 /* skills */
-.skills{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-.skills div{background:var(--bg-2);border:1px solid var(--line);border-radius:14px;padding:18px}
-.skills h3{font-size:1rem;margin-bottom:.6rem}
-@media (max-width:820px){.skills{grid-template-columns:1fr 1fr}}
-@media (max-width:480px){.skills{grid-template-columns:1fr}}
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media (max-width:900px){.skills{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.skills{grid-template-columns:1fr}}
+.skills>div{background:var(--bg-2);border:1px solid var(--line);border-radius:14px;padding:18px}
+.skills h3{font-size:1rem;margin-bottom:.7rem}
+
+/* small list */
+.plain{list-style:none;padding:0;margin:0}
+.plain li{padding:10px 0;border-bottom:1px solid var(--line);font-size:.93rem;color:var(--ink-2)}
+.plain li b{color:var(--ink);font-weight:600}
+.plain .d{font:500 .76rem "JetBrains Mono",monospace;color:var(--gold);display:block}
 
 /* contact */
 .contact{text-align:center}
-.contact h2{font-size:clamp(1.9rem,4vw,2.8rem)}
+.contact h2{font-size:clamp(1.9rem,4vw,2.7rem)}
 .contact .btns{justify-content:center;margin-top:1.4rem}
 footer{padding:28px 0;color:var(--ink-2);font-size:.82rem;text-align:center;border-top:1px solid var(--line)}
 .reveal{opacity:0;transform:translateY(14px);transition:opacity .6s,transform .6s}
@@ -171,8 +195,9 @@ footer{padding:28px 0;color:var(--ink-2);font-size:.82rem;text-align:center;bord
   <div class="wrap nav">
     <a class="brand" href="#top">Aqib Gul<span>.</span></a>
     <nav class="links">
+      <a href="#expertise">Expertise</a>
       <a href="#research">Research</a>
-      <a href="#work">Featured work</a>
+      <a href="#projects">Projects</a>
       <a href="#publications">Publications</a>
       <a href="#experience">Experience</a>
       <a href="#teaching">Teaching</a>
@@ -188,13 +213,15 @@ footer{padding:28px 0;color:var(--ink-2);font-size:.82rem;text-align:center;bord
   <div class="wrap">
     <div class="hero-grid">
       <div>
-        <div class="kicker">PhD Statistics · Forecasting researcher</div>
-        <h1>Forecasts people can <em>act on</em>, with the uncertainty shown.</h1>
-        <p class="sub">I'm Dr. Aqib Gul, a statistician working on forecasting for decisions under uncertainty. My research covers agricultural market prices, Himalayan river flows and financial series. I test models the way they will be used, and I take them into live use.</p>
+        <div class="kicker">Dr. Aqib Gul · PhD Statistics</div>
+        <h1>Statistics, machine learning and AI that people can <em>act on</em>.</h1>
+        <p class="sub">I'm a statistician and data scientist from Kashmir. I design studies, build forecasting and machine-learning models, take them into live systems, and teach others to do the same. My work spans agricultural markets, rivers, finance, healthcare and experimental research.</p>
+        <div class="roles"><span>Statistician</span><span>Data scientist</span><span>ML researcher</span><span>Statistical consultant</span><span>Educator</span></div>
         <div class="btns">
-          <a class="btn primary" href="#work">See my research</a>
+          <a class="btn primary" href="#projects">View my work</a>
           <a class="btn" href="https://github.com/DeepStatistix" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.2-3.1-.1-.4-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.7 1.7.2 2.8.1 3.2.8.8 1.2 1.9 1.2 3.1 0 4.7-2.8 5.7-5.5 6 .4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z"/></svg>GitHub</a>
           <a class="btn" href="https://www.linkedin.com/in/aqibgul" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zM7.1 20.5H3.5V9h3.6v11.5zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0z"/></svg>LinkedIn</a>
+          <a class="btn" href="https://orcid.org/0009-0009-8770-6156" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0a12 12 0 1 0 0 24 12 12 0 0 0 0-24zM7.4 17.3H5.9V7.1h1.5v10.2zM6.6 6.2a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm11.6 5.9c0 2.9-2 5.2-5.3 5.2H9.4V7.1h3.5c3.3 0 5.3 2.3 5.3 5zm-1.6 0c0-2.1-1.3-3.8-3.9-3.8h-1.8v7.7h1.8c2.6 0 3.9-1.8 3.9-3.9z"/></svg>ORCID</a>
           <a class="btn" href="mailto:maaqib90@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Email</a>
         </div>
       </div>
@@ -203,107 +230,132 @@ footer{padding:28px 0;color:var(--ink-2);font-size:.82rem;text-align:center;bord
 
     <div class="fan reveal" aria-hidden="true">
       <div class="fan-head">
-        <span><b>What I build:</b> a point forecast with honest ranges, tested only on the future</span>
-        <span class="legend"><span><i style="background:var(--ink)"></i>observed</span><span><i style="background:var(--teal)"></i>forecast</span><span><i style="background:var(--band2)"></i>80% range</span><span><i style="background:var(--band1)"></i>95% range</span></span>
+        <span><b>My signature:</b> a forecast with honest ranges, tested only on the future</span>
+        <span class="legend"><span><i style="background:var(--ink)"></i>observed</span><span><i style="background:var(--teal)"></i>forecast</span><span><i style="background:var(--band2)"></i>80%</span><span><i style="background:var(--band1)"></i>95%</span></span>
       </div>
-      <svg id="fanchart" viewBox="0 0 1000 170" preserveAspectRatio="none"></svg>
+      <svg id="fanchart" viewBox="0 0 1000 150" preserveAspectRatio="none"></svg>
     </div>
 
     <div class="stats reveal">
-      <div class="stat"><b data-count="78">78</b><span>market price series modelled</span></div>
-      <div class="stat"><b data-count="25">25</b><span>markets across 11 states/UTs</span></div>
-      <div class="stat"><b data-count="217065">217,065</b><span>trading-day observations</span></div>
-      <div class="stat"><b>~11k</b><span>weekly visits to MIC in public testing</span></div>
+      <div class="stat"><b>17</b><span>journal articles</span></div>
+      <div class="stat"><b>4</b><span>book chapters</span></div>
+      <div class="stat"><b>5</b><span>conference presentations</span></div>
+      <div class="stat"><b>20+</b><span>consulting engagements</span></div>
+      <div class="stat"><b>1</b><span>live forecasting platform, ~11k visits/week</span></div>
     </div>
   </div>
 </section>
 
-<!-- RESEARCH THEMES -->
+<!-- EXPERTISE -->
+<section id="expertise" class="alt">
+  <div class="wrap">
+    <div class="kicker">What I do</div>
+    <h2>Six areas of expertise</h2>
+    <p class="lede">A statistician's rigour, with the engineering to take models into live use.</p>
+    <div class="grid3">
+      <div class="box reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 17l5-5 4 3 8-9"/><path d="M14 6h6v6"/></svg></div><h3>Forecasting & time series</h3><p>ARIMA to Transformers, compared honestly with walk-forward tests, Diebold–Mariano tests and prediction intervals.</p><div class="tags"><span class="tag">SARIMA</span><span class="tag">TBATS</span><span class="tag">LSTM</span><span class="tag">Stacking</span></div></div>
+      <div class="box reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></div><h3>Statistics & experimental design</h3><p>Study design, ANOVA, mixed models, regression and distribution modelling for agricultural, forestry and health research.</p><div class="tags"><span class="tag">DoE</span><span class="tag">Mixed models</span><span class="tag">Inference</span></div></div>
+      <div class="box reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><circle cx="4" cy="6" r="2"/><circle cx="20" cy="6" r="2"/><circle cx="4" cy="18" r="2"/><circle cx="20" cy="18" r="2"/><path d="M6 7l4 3M18 7l-4 3M6 17l4-3M18 17l-4-3"/></svg></div><h3>Machine & deep learning</h3><p>Ensembles, gradient boosting, graph neural networks, CNNs for images and NLP for text classification.</p><div class="tags"><span class="tag">XGBoost</span><span class="tag">GNNs</span><span class="tag">CNNs</span><span class="tag">NLP</span></div></div>
+      <div class="box reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h10"/><circle cx="19" cy="17" r="2"/></svg></div><h3>ML engineering & deployment</h3><p>APIs, Docker, CI/CD, scheduled retraining, monitoring and retrieval-augmented assistants in production.</p><div class="tags"><span class="tag">FastAPI</span><span class="tag">Docker</span><span class="tag">MLflow</span><span class="tag">RAG</span></div></div>
+      <div class="box reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg></div><h3>Data engineering & BI</h3><p>SQL pipelines, data-quality checks, Spark and Hadoop, and dashboards in Power BI and Tableau.</p><div class="tags"><span class="tag">PostgreSQL</span><span class="tag">Spark</span><span class="tag">Power BI</span></div></div>
+      <div class="box reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 8l10-5 10 5-10 5z"/><path d="M6 10v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/></svg></div><h3>Teaching & training</h3><p>University courses, workshops and capacity-building programmes in statistics, R, Python and AI.</p><div class="tags"><span class="tag">R</span><span class="tag">Python</span><span class="tag">SPSS</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- RESEARCH -->
 <section id="research">
   <div class="wrap">
-    <div class="kicker">Research agenda</div>
-    <h2>One question across domains: which forecast can we trust?</h2>
-    <p class="lede">Markets, rivers and stocks are connected, seasonal and prone to shocks. My work asks which model suits which series, how to measure accuracy honestly, and how to put forecasts and their uncertainty in front of the people who decide.</p>
-    <div class="themes">
-      <div class="theme-card reveal"><div class="n">01</div><h3>Model choice per market</h3><p>No single model wins everywhere. I compare statistical, machine-learning and deep models series by series, and combine them through ensembles and stacking.</p></div>
-      <div class="theme-card reveal"><div class="n">02</div><h3>Evaluation that mimics deployment</h3><p>Chronological hold-outs, walk-forward validation, Diebold–Mariano tests and interval coverage. Accuracy only counts if the test resembles real use.</p></div>
-      <div class="theme-card reveal"><div class="n">03</div><h3>From model to decision</h3><p>Forecasts with ranges and what-if scenarios for growers, traders and agencies, plus open-source tools that make correct inference the default.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- FEATURED WORK -->
-<section id="work">
-  <div class="wrap">
-    <div class="kicker">Featured work</div>
-    <h2>Research that runs in the real world</h2>
-    <p class="lede">Peer-reviewed methods, open code and a live forecasting system.</p>
+    <div class="kicker">Research</div>
+    <h2>Which forecast can we trust?</h2>
+    <p class="lede">My research asks which model suits which series, how to measure accuracy honestly, and how to put forecasts and their uncertainty in front of the people who decide.</p>
 
     <div class="flag reveal">
       <div class="l">
         <div class="kicker">Flagship · HADP, SKUAST-Kashmir</div>
         <h3>Market Intelligence Cell (MIC)</h3>
-        <p>A research programme on horticultural price forecasting under the Holistic Agriculture Development Programme. It asks which model works best for which market, and it publishes forecasts with ranges for growers, traders and agencies.</p>
+        <p>A research programme and live platform for horticultural price forecasting under the Holistic Agriculture Development Programme, Government of Jammu & Kashmir. It publishes forecasts with ranges for growers, traders and agencies, plus an assistant that answers questions using figures taken straight from MIC's database.</p>
         <div class="mini">
-          <div><b>78</b><span>series · 25 markets</span></div>
-          <div><b>9 / 11</b><span>model families won at least one series (2024 hold-out)</span></div>
-          <div><b>93%</b><span>interval coverage, live 2026 cherry season</span></div>
+          <div><b>78</b><span>price series</span></div>
+          <div><b>25</b><span>markets · 11 states/UTs</span></div>
+          <div><b>217k</b><span>trading-day observations</span></div>
         </div>
+        <a href="https://micskuast.in" target="_blank" rel="noopener">Visit micskuast.in →</a>
       </div>
       <div class="r">
         <h3 style="font-size:1.1rem;margin-bottom:.3rem">What the research found</h3>
         <ul>
-          <li><b>No universal winner.</b> On the 2024 hold-out, 9 of 11 model families were best for at least one series (LSTM 6, Transformer 5, TBATS 5…).</li>
+          <li><b>No universal winner.</b> On the 2024 hold-out, 9 of 11 model families were best for at least one series.</li>
           <li><b>Complexity is not a guarantee.</b> The Transformer was best on one series and last on 35 of 78.</li>
-          <li><b>Live test, 2026 cherry season:</b> model forecasts had an error of 18.3% against 27.5% for the naive benchmark, and beat it on 11 of 13 series.</li>
-          <li><b>Custom stacking</b>, tuned per market, gave the lowest error in all six markets in my PhD thesis (MAPE 1.1–3.0%).</li>
+          <li><b>Live 2026 cherry season:</b> model forecasts, reviewed before publication, had an error of 18.3% against 27.5% for the naive benchmark, winning on 11 of 13 series with 93% interval coverage.</li>
+          <li><b>PhD thesis:</b> a custom stacking ensemble, tuned per market, gave the lowest error in all six apple markets (MAPE 1.1–3.0%).</li>
         </ul>
-        <div class="tags" style="margin-top:14px"><span class="tag">LSTM</span><span class="tag">Transformer</span><span class="tag">TBATS</span><span class="tag">Stacking</span><span class="tag">Prediction intervals</span><span class="tag">Walk-forward</span></div>
+        <div class="tags" style="margin-top:14px"><span class="tag">LSTM</span><span class="tag">Transformer</span><span class="tag">TBATS</span><span class="tag">Stacking</span><span class="tag">Prediction intervals</span><span class="tag">RAG assistant</span></div>
       </div>
     </div>
 
     <div class="cards">
       <article class="card reveal">
-        <div class="venue">JOURNAL OF HYDROLOGY · 2026</div>
-        <h3>HydroGRAF: basin-aware streamflow forecasting in the Himalayas</h3>
+        <div class="venue">Journal of Hydrology · 2026</div>
+        <h3>HydroGRAF: streamflow forecasting in the Himalayas</h3>
         <p>Graph attention restricted to the river network. It reconstructs up to 40% missing discharge across 15 Jhelum stations and gives calibrated 1–4-week forecasts for irrigation and disaster planning.</p>
-        <div class="tags"><span class="tag">Graph attention</span><span class="tag">XGBoost gap-filling</span><span class="tag">CRPS · coverage 0.94–0.96</span></div>
-        <a class="go" href="https://github.com/DeepStatistix/HydroGRAF" target="_blank" rel="noopener">Code & data →</a>
+        <div class="tags"><span class="tag">Graph attention</span><span class="tag">Gap-filling</span><span class="tag">Coverage 0.94–0.96</span></div>
+        <div><a class="go" href="https://doi.org/10.1016/j.jhydrol.2026.135479" target="_blank" rel="noopener">Paper →</a><a class="go" href="https://github.com/DeepStatistix/HydroGRAF" target="_blank" rel="noopener">Code →</a></div>
       </article>
       <article class="card reveal">
-        <div class="venue">SCIENTIFIC REPORTS · 2026 · 16:1582</div>
-        <h3>Deep-learning cherry price forecasting across multi-market supply chains</h3>
-        <p>SARIMA, Prophet, RF, XGBoost, LSTM and Transformer compared on 2012–2024 daily prices in five markets. The best model went live in the 2025 season with about 92–94% accuracy.</p>
+        <div class="venue">Scientific Reports · 2026 · 16:1582</div>
+        <h3>Deep-learning cherry price forecasting across supply chains</h3>
+        <p>Six model families compared on 2012–2024 daily prices in five markets. The best model went live in the 2025 season with about 92–94% accuracy.</p>
         <div class="tags"><span class="tag">LSTM</span><span class="tag">Diebold–Mariano</span><span class="tag">Live deployment</span></div>
-        <a class="go" href="https://doi.org/10.1038/s41598-025-30980-9" target="_blank" rel="noopener">Read the paper →</a>
+        <div><a class="go" href="https://doi.org/10.1038/s41598-025-30980-9" target="_blank" rel="noopener">Paper →</a></div>
       </article>
       <article class="card reveal">
-        <div class="venue">COMPUTATIONAL ECONOMICS · 2025 · SOLE AUTHOR</div>
+        <div class="venue">Computational Economics · 2025 · Sole author</div>
         <h3>A hybrid ensemble for stock price prediction</h3>
-        <p>Bagging, boosting, dagging and stacking combined through a meta-learner. On the chronological test set, the hybrid had MSE 53.4, against 75.7, 149.3 and 171.9 for the single strategies.</p>
-        <div class="tags"><span class="tag">Ensemble learning</span><span class="tag">Meta-learner</span><span class="tag">Finance</span></div>
-        <a class="go" href="https://github.com/DeepStatistix/Hybrid-Ensemble-Model" target="_blank" rel="noopener">Code →</a>
+        <p>Bagging, boosting, dagging and stacking combined through a meta-learner. On the chronological test set it had MSE 53.4, against 75.7, 149.3 and 171.9 for the single strategies.</p>
+        <div class="tags"><span class="tag">Ensembles</span><span class="tag">Finance</span></div>
+        <div><a class="go" href="https://doi.org/10.1007/s10614-025-10979-0" target="_blank" rel="noopener">Paper →</a><a class="go" href="https://github.com/DeepStatistix/Hybrid-Ensemble-Model" target="_blank" rel="noopener">Code →</a></div>
       </article>
       <article class="card reveal">
-        <div class="venue">ARXIV 2603.09041 · PYTHON PACKAGE</div>
+        <div class="venue">arXiv 2603.09041 · Python package</div>
         <h3>AgroDesign: design-aware statistical inference</h3>
         <p>You declare the experimental design (CRD, RCBD, factorial, split-plot, multi-environment). AgroDesign builds the correct model and error strata, then runs ANOVA, mean separation, mixed models and G×E stability.</p>
-        <div class="tags"><span class="tag">pip install agrodesign</span><span class="tag">Open source</span><span class="tag">DoE</span></div>
-        <a class="go" href="https://github.com/DeepStatistix/AgroDesign" target="_blank" rel="noopener">GitHub →</a>
+        <div class="tags"><span class="tag">pip install agrodesign</span><span class="tag">Open source</span></div>
+        <div><a class="go" href="https://arxiv.org/abs/2603.09041" target="_blank" rel="noopener">Preprint →</a><a class="go" href="https://github.com/DeepStatistix/AgroDesign" target="_blank" rel="noopener">GitHub →</a></div>
       </article>
-      <article class="card reveal">
-        <div class="venue">SKUAST JOURNAL OF RESEARCH · IN PRESS</div>
-        <h3>Temporal granularity and machine-learning forecasts</h3>
-        <p>Daily, weekly or monthly? Data frequency is itself a modelling decision, and it changes forecast accuracy.</p>
-        <div class="tags"><span class="tag">Time series</span><span class="tag">Aggregation</span></div>
-        <a class="go" href="https://doi.org/10.5958/2349297X.2025.00062.3" target="_blank" rel="noopener">DOI →</a>
-      </article>
-      <article class="card reveal">
-        <div class="venue">NISM RESEARCH CONFERENCE · 2025</div>
-        <h3>Machine learning for finfluencer regulation</h3>
-        <p>A framework for identifying unauthorised financial advice on social media. Presented at the Fifth Annual International Research Conference on Securities Market.</p>
-        <div class="tags"><span class="tag">NLP</span><span class="tag">Regulation</span><span class="tag">Finance</span></div>
-      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="alt">
+  <div class="wrap">
+    <div class="kicker">Projects</div>
+    <h2>Selected projects</h2>
+    <p class="lede">Forecasting, deep learning, NLP and classic machine learning, from research code to production systems.</p>
+    <div class="filters" id="projFilters">
+      <button class="on" data-f="all">All</button>
+      <button data-f="fc">Forecasting</button>
+      <button data-f="dl">Deep learning & NLP</button>
+      <button data-f="ml">Machine learning & analytics</button>
+      <button data-f="tool">Tools & systems</button>
+    </div>
+    <div class="cards three" id="projects-grid">
+      <article class="card" data-k="tool fc"><div class="venue">Production system</div><h3>MIC forecasting platform</h3><p>Data ingestion, SQL storage, statistical, ML and deep-learning forecasts, REST APIs, dashboards, monitoring and a retrieval-augmented assistant.</p><div class="tags"><span class="tag">FastAPI</span><span class="tag">Docker</span><span class="tag">CI/CD</span></div><a class="go" href="https://micskuast.in" target="_blank" rel="noopener">Live site →</a></article>
+      <article class="card" data-k="fc"><div class="venue">Research code</div><h3>Apple price forecasting benchmark</h3><p>A reproducible framework comparing statistical, ML, deep-learning and transformer models across production and terminal markets, with leakage-aware recursive forecasting.</p><div class="tags"><span class="tag">Python</span><span class="tag">Benchmarking</span></div><a class="go" href="https://github.com/DeepStatistix/apple-price-forecasting-deployment" target="_blank" rel="noopener">GitHub →</a></article>
+      <article class="card" data-k="fc dl"><div class="venue">Research code</div><h3>HydroGRAF pipeline</h3><p>Preprocessing, ML gap-filling with uncertainty, and basin-aware graph forecasting for river discharge.</p><div class="tags"><span class="tag">Graph attention</span><span class="tag">Spatio-temporal</span></div><a class="go" href="https://github.com/DeepStatistix/HydroGRAF" target="_blank" rel="noopener">GitHub →</a></article>
+      <article class="card" data-k="fc ml"><div class="venue">Research code</div><h3>Hybrid Ensemble Model (HEM)</h3><p>Bagging, boosting, stacking and dagging combined for stock price forecasting.</p><div class="tags"><span class="tag">scikit-learn</span><span class="tag">Finance</span></div><a class="go" href="https://github.com/DeepStatistix/Hybrid-Ensemble-Model" target="_blank" rel="noopener">GitHub →</a></article>
+      <article class="card" data-k="tool"><div class="venue">Open-source package</div><h3>AgroDesign</h3><p>Design-aware ANOVA, mean separation, mixed models and G×E stability for agricultural experiments, inspired by R's agricolae.</p><div class="tags"><span class="tag">Python</span><span class="tag">PyPI</span></div><a class="go" href="https://github.com/DeepStatistix/AgroDesign" target="_blank" rel="noopener">GitHub →</a></article>
+      <article class="card" data-k="fc"><div class="venue">Forecasting</div><h3>Multi-market apple price models</h3><p>ARIMA, SVM, decision trees, random forest and LSTM compared for apple prices across markets: the code behind the PhD work.</p><div class="tags"><span class="tag">ARIMA</span><span class="tag">LSTM</span></div><a class="go" href="https://github.com/DeepStatistix/Time-Series-Forecasting" target="_blank" rel="noopener">GitHub →</a></article>
+      <article class="card" data-k="dl"><div class="venue">Computer vision</div><h3>Pest & crop disease classification</h3><p>Transfer learning with ResNet and InceptionV3 to classify crop diseases and pests from field images.</p><div class="tags"><span class="tag">ResNet</span><span class="tag">InceptionV3</span><span class="tag">TensorFlow</span></div></article>
+      <article class="card" data-k="dl"><div class="venue">NLP</div><h3>Business review text classification</h3><p>Classifying Yelp business reviews from their text: preprocessing, vectorisation and model comparison.</p><div class="tags"><span class="tag">NLP</span><span class="tag">spaCy / NLTK</span></div><a class="go" href="https://github.com/DeepStatistix/ML-Project-Notebooks" target="_blank" rel="noopener">Notebook →</a></article>
+      <article class="card" data-k="dl"><div class="venue">Computer vision</div><h3>Handwritten digit recognition</h3><p>A convolutional neural network trained on MNIST, with a saved model and an inference notebook.</p><div class="tags"><span class="tag">CNN</span><span class="tag">Keras</span></div><a class="go" href="https://github.com/DeepStatistix/ML-Project-Notebooks" target="_blank" rel="noopener">Notebook →</a></article>
+      <article class="card" data-k="dl ml"><div class="venue">NLP · Finance</div><h3>Finfluencer detection</h3><p>A machine-learning framework to flag unauthorised financial advice on social media, presented at NISM.</p><div class="tags"><span class="tag">Text classification</span><span class="tag">Regulation</span></div></article>
+      <article class="card" data-k="fc ml"><div class="venue">Retail analytics</div><h3>Predicting future sales</h3><p>Feature engineering on transactional data to forecast future product sales.</p><div class="tags"><span class="tag">Gradient boosting</span><span class="tag">Features</span></div><a class="go" href="https://github.com/DeepStatistix/ML-Project-Notebooks" target="_blank" rel="noopener">Notebook →</a></article>
+      <article class="card" data-k="ml"><div class="venue">Marketing analytics</div><h3>Lead scoring & customer segmentation</h3><p>Random-forest lead scoring and k-means clustering for customer segments.</p><div class="tags"><span class="tag">Random forest</span><span class="tag">K-means</span></div><a class="go" href="https://github.com/DeepStatistix/ML-Project-Notebooks" target="_blank" rel="noopener">Notebooks →</a></article>
+      <article class="card" data-k="ml"><div class="venue">Regression</div><h3>House price prediction</h3><p>Boston Housing prices predicted with several ML algorithms and compared.</p><div class="tags"><span class="tag">Regression</span><span class="tag">scikit-learn</span></div><a class="go" href="https://github.com/DeepStatistix/House-Price-Prediction" target="_blank" rel="noopener">GitHub →</a></article>
+      <article class="card" data-k="ml"><div class="venue">Classification</div><h3>Wine quality prediction</h3><p>Wine quality predicted from physicochemical properties.</p><div class="tags"><span class="tag">Classification</span><span class="tag">EDA</span></div><a class="go" href="https://github.com/DeepStatistix/Wine-Quality-Prediction" target="_blank" rel="noopener">GitHub →</a></article>
+      <article class="card" data-k="ml"><div class="venue">Exploratory analysis</div><h3>Global terrorism EDA</h3><p>Exploratory analysis of the Global Terrorism Database: trends, regions and attack types.</p><div class="tags"><span class="tag">pandas</span><span class="tag">Visualisation</span></div><a class="go" href="https://github.com/DeepStatistix/ML-Project-Notebooks" target="_blank" rel="noopener">Notebook →</a></article>
     </div>
   </div>
 </section>
@@ -312,83 +364,125 @@ footer{padding:28px 0;color:var(--ink-2);font-size:.82rem;text-align:center;bord
 <section id="publications">
   <div class="wrap">
     <div class="kicker">Publications</div>
-    <h2>Selected publications</h2>
-    <p class="lede">First-author forecasting research, plus collaborations where I led statistical design and analysis.</p>
-    <div class="filters" role="tablist">
+    <h2>Publications & presentations</h2>
+    <p class="lede">First-author forecasting research, plus collaborations across agriculture, engineering and economics where I led statistical design and analysis.</p>
+    <div class="filters" id="pubFilters">
       <button class="on" data-f="all">All</button>
       <button data-f="lead">First / sole author</button>
-      <button data-f="collab">Collaborative</button>
+      <button data-f="j">Journal articles</button>
+      <button data-f="ch">Book chapters</button>
+      <button data-f="c">Conferences</button>
     </div>
     <ul class="pubs" id="pubs">
-      <li data-k="lead"><span class="y">2026</span><div><div class="t">HydroGRAF: Hybrid discharge reconstruction and basin-aware streamflow forecasting in the Himalayas</div><div class="a"><b>Gul, A.</b>, Shaheen, F. A., & Majid, M. · <i>Journal of Hydrology</i>, 135479</div><a href="https://doi.org/10.5281/zenodo.19332541" target="_blank" rel="noopener">Code</a><a href="https://doi.org/10.5281/zenodo.19332576" target="_blank" rel="noopener">Data</a></div></li>
-      <li data-k="lead"><span class="y">2026</span><div><div class="t">Deep learning-enabled cherry price forecasting and real-time system deployment across multi-market supply chains in India</div><div class="a">Shaheen, F. A., <b>Gul, A.</b> (co-corresponding), Ganai, N. et al. · <i>Scientific Reports</i> 16:1582</div><a href="https://doi.org/10.1038/s41598-025-30980-9" target="_blank" rel="noopener">DOI</a></div></li>
-      <li data-k="lead"><span class="y">2025</span><div><div class="t">A novel hybrid ensemble framework for stock price prediction: combining bagging, boosting, dagging and stacking</div><div class="a"><b>Gul, A.</b> · <i>Computational Economics</i></div></div></li>
-      <li data-k="lead"><span class="y">2026</span><div><div class="t">AgroDesign: a design-aware statistical inference framework for agricultural experiments in Python</div><div class="a"><b>Gul, A.</b> · arXiv:2603.09041</div><a href="https://arxiv.org/abs/2603.09041" target="_blank" rel="noopener">arXiv</a></div></li>
-      <li data-k="lead"><span class="y">In press</span><div><div class="t">Impact of temporal granularity on machine learning models for time series forecasting</div><div class="a"><b>Gul, A.</b>, Khan, I., Mir, S. A., Nazir, N., Shaheen, F. A., & Dar, Z. A. · <i>SKUAST Journal of Research</i></div><a href="https://doi.org/10.5958/2349297X.2025.00062.3" target="_blank" rel="noopener">DOI</a></div></li>
-      <li data-k="lead"><span class="y">2025</span><div><div class="t">Evaluating diameter distribution models for coniferous forests in the northwestern Himalayas</div><div class="a"><b>Gul, A.</b>, Nazir, N., Khan, I., et al. · <i>AATCC Review</i>, 140–150</div></div></li>
-      <li data-k="lead"><span class="y">2025</span><div><div class="t">Leveraging artificial intelligence for predictive modeling in agriculture</div><div class="a"><b>Gul, A.</b> · In <i>Latest Trends in Agriculture Sciences</i>, Vol. 8 (book chapter)</div></div></li>
-      <li data-k="lead"><span class="y">2023</span><div><div class="t">Regression models for tree volume prediction in <i>Pinus wallichiana</i> stands of the south-western Himalayan region of Kashmir</div><div class="a"><b>Gul, A.</b>, Bhat, B. A., Nazir, N., & Pukhta, M. S. · <i>Journal of the Indian Society of Agricultural Statistics</i> 78(2)</div></div></li>
-      <li data-k="collab"><span class="y">2025</span><div><div class="t">Profiling difenoconazole and flusilazole resistance, fitness penalty and phenotypic stability in <i>Venturia inaequalis</i></div><div class="a">Mubashir, S. S., et al., <b>Gul, A.</b> · <i>Scientific Reports</i> 15, 4855</div></div></li>
-      <li data-k="collab"><span class="y">2025</span><div><div class="t">Occupational health impacts of tractor noise and its attenuation through ergonomic interventions</div><div class="a">Mushtaq, S. A., <b>Gul, A.</b>, & Dixit, J. · <i>Journal of Biosystems Engineering</i></div></div></li>
-      <li data-k="collab"><span class="y">2024</span><div><div class="t">Impact of power tiller noise on the occupational health of Indian farmers</div><div class="a">Mushtaq, S. A., Dixit, J., <b>Gul, A.</b>, et al. · <i>Journal of Agricultural Engineering (India)</i> 61(6)</div></div></li>
-      <li data-k="collab"><span class="y">2024</span><div><div class="t">Enhancing regression models: classical vs ridge regression under multicollinearity in high-density apple data</div><div class="a">Kulsum, U., Khan, I., <b>Gul, A.</b>, et al.</div></div></li>
-      <li data-k="collab"><span class="y">2024</span><div><div class="t">Economic insights of agricultural sustainability in the Himalayan districts of Jammu and Kashmir</div><div class="a">Murugesan, S., Baba, S. H., Majeed, U., <b>Gul, A.</b>, et al. · <i>Journal of Scientific Research and Reports</i> 30(9)</div></div></li>
+      <li data-k="j lead"><span class="y">2026</span><div><div class="t">HydroGRAF: Hybrid discharge reconstruction and basin-aware streamflow forecasting in the Himalayas</div><div class="a"><b>Gul, A.</b>, Shaheen, F. A., & Majid, M. · <i>Journal of Hydrology</i>, 135479</div><a href="https://doi.org/10.1016/j.jhydrol.2026.135479" target="_blank" rel="noopener">DOI</a><a href="https://doi.org/10.5281/zenodo.19332541" target="_blank" rel="noopener">Code</a><a href="https://doi.org/10.5281/zenodo.19332576" target="_blank" rel="noopener">Data</a></div></li>
+      <li data-k="j lead"><span class="y">2026</span><div><div class="t">Deep learning-enabled cherry price forecasting and real-time system deployment across multi-market supply chains in India</div><div class="a">Shaheen, F. A., <b>Gul, A.</b>, Ganai, N., Majid, M., Rashid, M., & Sultan, A. · <i>Scientific Reports</i> 16:1582 <span class="badge">co-corresponding</span></div><a href="https://doi.org/10.1038/s41598-025-30980-9" target="_blank" rel="noopener">DOI</a></div></li>
+      <li data-k="j lead"><span class="y">2025</span><div><div class="t">A novel hybrid ensemble framework for stock price prediction: Combining bagging, boosting, dagging, and stacking</div><div class="a"><b>Gul, A.</b> · <i>Computational Economics</i> <span class="badge">sole author</span></div><a href="https://doi.org/10.1007/s10614-025-10979-0" target="_blank" rel="noopener">DOI</a></div></li>
+      <li data-k="j lead"><span class="y">In press</span><div><div class="t">Impact of temporal granularity on machine learning models for time-series forecasting</div><div class="a"><b>Gul, A.</b>, Khan, I., Mir, S. A., Nazir, N., Shaheen, F. A., & Dar, Z. A. · <i>SKUAST Journal of Research</i></div><a href="https://doi.org/10.5958/2349297X.2025.00062.3" target="_blank" rel="noopener">DOI</a></div></li>
+      <li data-k="lead"><span class="y">2026</span><div><div class="t">AgroDesign: A design-aware statistical inference framework for agricultural experiments in Python</div><div class="a"><b>Gul, A.</b> · arXiv:2603.09041 <span class="badge">preprint</span></div><a href="https://doi.org/10.48550/arXiv.2603.09041" target="_blank" rel="noopener">arXiv</a></div></li>
+      <li data-k="j"><span class="y">2026</span><div><div class="t">Evaluating the effects of soil and water conservation measures on soil moisture regimes and crop performance in Jammu's rainfed agroecosystems</div><div class="a">Khan, Z. A., Srivastava, R. K., <b>Gul, A.</b>, et al. · <i>Scientific Reports</i></div><a href="https://doi.org/10.1038/s41598-026-61203-4" target="_blank" rel="noopener">DOI</a></div></li>
+      <li data-k="j"><span class="y">2026</span><div><div class="t">Design, development, and performance evaluation of a vertical hydroponic system for fodder crop production</div><div class="a">Khan, Z. A., Khan, J. N., <b>Gul, A.</b>, et al. · <i>BMC Plant Biology</i> (accepted)</div><a href="https://doi.org/10.1186/s12870-026-09585-5" target="_blank" rel="noopener">DOI</a></div></li>
+      <li data-k="j"><span class="y">2026</span><div><div class="t">Defining the developmental window and physiological requirements for efficient in ovulo embryo rescue in seedless grape</div><div class="a">Bhat, S. N., Lone, I. A., Zargar, S. M., <b>Gul, A.</b>, et al. · <i>Plant Cell, Tissue and Organ Culture</i> 166, 70</div><a href="https://doi.org/10.1007/s11240-026-03574-0" target="_blank" rel="noopener">DOI</a></div></li>
+      <li data-k="j"><span class="y">2026</span><div><div class="t">Assessing instability and decomposition of factors contributing to pear crop production variability in Kashmir</div><div class="a">Bashir, A., Khan, I., <b>Gul, A.</b>, et al. · <i>Agricultural Economics Research Review</i></div><a href="https://doi.org/10.1177/09713441261452808" target="_blank" rel="noopener">DOI</a></div></li>
+      <li data-k="j lead"><span class="y">2025</span><div><div class="t">Evaluating diameter distribution models for coniferous forests in the northwestern Himalayas</div><div class="a"><b>Gul, A.</b>, Nazir, N., Khan, I., et al. · <i>AATCC Review</i> 13(4), 140–150</div><a href="https://doi.org/10.21276/AATCCReview.2025.13.04.140" target="_blank" rel="noopener">DOI</a></div></li>
+      <li data-k="j"><span class="y">2025</span><div><div class="t">Profiling difenoconazole and flusilazole resistance, fitness penalty and phenotypic stability in <i>Venturia inaequalis</i></div><div class="a">Mubashir, S. S., et al., <b>Gul, A.</b> · <i>Scientific Reports</i> 15, 4855</div><a href="https://doi.org/10.1038/s41598-025-89536-6" target="_blank" rel="noopener">DOI</a></div></li>
+      <li data-k="j"><span class="y">2025</span><div><div class="t">Occupational health impacts of tractor noise and its attenuation through ergonomic interventions</div><div class="a">Mushtaq, S. A., <b>Gul, A.</b>, & Dixit, J. · <i>Journal of Biosystems Engineering</i></div><a href="https://doi.org/10.1007/s42853-025-00261-4" target="_blank" rel="noopener">DOI</a></div></li>
+      <li data-k="j"><span class="y">2025</span><div><div class="t">Effect of induced defoliation on apple nursery plants grown under protected conditions in the northwestern Himalayan region</div><div class="a">Lone, J. A., Dar, J. A., et al., <b>Gul, A.</b>, et al. · <i>AATCC Review</i> 13(1), 77–84</div><a href="https://doi.org/10.21276/AATCCReview.2025.13.01.77" target="_blank" rel="noopener">DOI</a></div></li>
+      <li data-k="j"><span class="y">2025</span><div><div class="t">Breeding vines: Unlocking the grapevine pollination dynamics and potential for hybridization in the temperate region of Kashmir Valley</div><div class="a">Bhat, S. N., et al., <b>Gul, A.</b>, et al. · <i>Journal of Community Mobilization and Sustainable Development</i> 20</div><a href="https://doi.org/10.5958/2231-6736.2025.00080.7" target="_blank" rel="noopener">DOI</a></div></li>
+      <li data-k="j"><span class="y">2024</span><div><div class="t">An economic insight of agricultural sustainability in the Himalayan districts of Jammu and Kashmir, India</div><div class="a">Murugesan, S., Baba, S. H., Majeed, U., <b>Gul, A.</b>, et al. · <i>Journal of Scientific Research and Reports</i> 30(9), 159–173</div></div></li>
+      <li data-k="j"><span class="y">2024</span><div><div class="t">Impact of power tiller noise on the occupational health of Indian farmers: A case study of Jammu and Kashmir</div><div class="a">Mushtaq, S. A., Dixit, J., <b>Gul, A.</b>, et al. · <i>Journal of Agricultural Engineering (India)</i> 61(6), 807–816</div><a href="https://doi.org/10.52151/jae2024616.1898" target="_blank" rel="noopener">DOI</a></div></li>
+      <li data-k="j"><span class="y">2024</span><div><div class="t">Enhancing regression models: Classical and ridge regression under multicollinearity in high-density apple data</div><div class="a">Kulsum, U., Khan, I., <b>Gul, A.</b>, et al. · <i>International Journal of Statistics and Applied Mathematics</i> 9(5)</div><a href="https://doi.org/10.22271/maths.2024.v9.i5Sa.1804" target="_blank" rel="noopener">DOI</a></div></li>
+      <li data-k="j lead"><span class="y">2023</span><div><div class="t">Regression models for tree volume prediction in <i>Pinus wallichiana</i> stands of the south-western Himalayan region of Kashmir</div><div class="a"><b>Gul, A.</b>, Bhat, B. A., Nazir, N., & Pukhta, M. S. · <i>Journal of the Indian Society of Agricultural Statistics</i> 78(2), 143–150</div><a href="https://doi.org/10.56093/jisas.v78i02.171361" target="_blank" rel="noopener">DOI</a></div></li>
+      <li data-k="ch"><span class="y">2026</span><div><div class="t">Agricultural entrepreneurship in operational management</div><div class="a">Rashid, M., Sultan, A., Shaheen, F. A., <b>Gul, A.</b>, et al. · In <i>Robotics and Intelligent Machines in Smart Agriculture</i>, CRC Press</div><a href="https://doi.org/10.1201/9781003562627-11" target="_blank" rel="noopener">DOI</a></div></li>
+      <li data-k="ch lead"><span class="y">2026</span><div><div class="t">Data analytics and decision making in agricultural marketing</div><div class="a"><b>Gul, A.</b> · In <i>Agriculture Branding and Market Intelligence: Insights for Sustainable Growth</i>, New India Publishing Agency</div></div></li>
+      <li data-k="ch"><span class="y">2026</span><div><div class="t">Market intelligence for supply chain optimization in Indian agriculture</div><div class="a">Kachroo, M. M., Fardous, F., Rashid, M., <b>Gul, A.</b>, et al. · In <i>Agriculture Branding and Market Intelligence</i>, New India Publishing Agency</div></div></li>
+      <li data-k="ch lead"><span class="y">2025</span><div><div class="t">Leveraging artificial intelligence for predictive modeling in agriculture</div><div class="a"><b>Gul, A.</b> · In <i>Latest Trends in Agriculture Sciences</i>, Vol. 8, Integrated Publications</div><a href="https://doi.org/10.62778/int.book.580" target="_blank" rel="noopener">DOI</a></div></li>
+      <li data-k="c lead"><span class="y">2026</span><div><div class="t">AI-driven decision support framework for agricultural price risk management in Himalayan horticulture</div><div class="a"><b>Gul, A.</b>, et al. · AERA Regional Conference on Building Resilient Himalayan Agriculture</div></div></li>
+      <li data-k="c lead"><span class="y">2025</span><div><div class="t">Hybrid ensemble intelligence for market-specific agricultural price forecasting</div><div class="a"><b>Gul, A.</b> · 5th LISA Global Symposium (virtual), World Statistics Day</div></div></li>
+      <li data-k="c lead"><span class="y">2024</span><div><div class="t">Machine learning for finfluencer regulation: A framework for identifying unauthorized financial advice</div><div class="a"><b>Gul, A.</b> · Fifth Annual International Research Conference on Securities Market, NISM, Patalganga</div></div></li>
+      <li data-k="c lead"><span class="y">2024</span><div><div class="t">Integrating artificial intelligence into decision support systems for enhanced agricultural market information</div><div class="a"><b>Gul, A.</b> · JK Agri-Med Science Congress, SKUAST-K</div></div></li>
+      <li data-k="c lead"><span class="y">2022</span><div><div class="t">Regression models for tree volume prediction in <i>Pinus wallichiana</i> stands of the south-western Himalayas of Kashmir</div><div class="a"><b>Gul, A.</b>, et al. · 73rd Annual Conference of the Indian Society of Agricultural Statistics</div></div></li>
     </ul>
-    <p style="margin-top:22px;color:var(--ink-2);font-size:.9rem"><b style="color:var(--ink)">Registered designs (India):</b> Crop Quality Assessing AI Device (No. 445043-001, 2025) · Crop Statistics Analyzing Computing Pad (No. 473779-001, 2025).</p>
+    <button class="more" id="pubMore">Show all</button>
   </div>
 </section>
 
 <!-- EXPERIENCE & EDUCATION -->
-<section id="experience">
+<section id="experience" class="alt">
   <div class="wrap">
     <div class="kicker">Experience & education</div>
     <h2>From forestry to forecasting</h2>
-    <p class="lede">Trained in statistics at SKUAST-Kashmir, now leading forecasting research in a statewide agricultural-marketing programme.</p>
+    <p class="lede">Three degrees from SKUAST-Kashmir, followed by work across a government research programme, consulting and industry internships.</p>
     <div class="two">
       <div>
         <h3 class="col">Experience</h3>
         <ul class="tl">
-          <li class="reveal"><div class="when">Nov 2023 – present</div><h3>Senior Project Associate / Young Professional-III, Data Science</h3><p>HADP "Strengthening Agricultural Marketing", SKUAST-K. Leads forecasting research for the Market Intelligence Cell, from data pipelines and model comparison to validation and publishing forecasts with domain experts.</p></li>
-          <li class="reveal"><div class="when">Nov 2022 – present</div><h3>Independent Data Science Consultant</h3><p>20+ engagements with healthcare institutions covering study design, regression, classification, hypothesis testing and reporting to non-technical teams.</p></li>
-          <li class="reveal"><div class="when">2022 – 2023</div><h3>Internships</h3><p>Big Data Analytics (CDAC Kolkata; Spark, Hadoop) · Machine Learning Engineer (Snapchai Production) · Data Analyst (Yoshops & Spark Foundation).</p></li>
+          <li class="reveal"><div class="when">Nov 2023 – present</div><h3>Young Professional-III / Senior Project Associate, Data Science & Monitoring</h3><div class="org">SKUAST-Kashmir · Holistic Agriculture Development Programme, Govt. of J&K</div>
+            <ul><li>Develops statistical, ML and deep-learning forecasting models for agricultural commodity prices.</li><li>Builds SQL pipelines and data-quality checks for monitoring and evaluation.</li><li>Builds FastAPI services, dashboards, Docker deployment, CI/CD and scheduled retraining for the MIC platform.</li><li>Contributed to a retrieval-augmented assistant; coordinates capacity-building activities.</li></ul></li>
+          <li class="reveal"><div class="when">Nov 2022 – present</div><h3>Freelance Data Scientist / Statistical Consultant</h3><div class="org">Independent · Remote</div><p>20+ engagements across healthcare, agriculture, forestry and environmental research: study design, regression, classification, hypothesis testing, model validation and reproducible reporting for non-technical teams.</p></li>
+          <li class="reveal"><div class="when">Nov – Dec 2023</div><h3>Big Data Analytics Intern</h3><div class="org">C-DAC Kolkata</div><p>Spark and Hadoop for distributed processing, NLP and image processing in Python, and Power BI / Tableau dashboards.</p></li>
+          <li class="reveal"><div class="when">Dec 2022 – Mar 2023</div><h3>Machine Learning Engineer Intern</h3><div class="org">Snapchai Production Ltd.</div><p>Image-based models to automate photo-editing workflows, with GitHub-based version control and CI/CD.</p></li>
+          <li class="reveal"><div class="when">Oct 2022 – Jan 2023</div><h3>Data Analyst Intern</h3><div class="org">Yoshops & The Sparks Foundation</div><p>Web scraping, regression modelling and real-time Power BI dashboards for business decisions.</p></li>
         </ul>
       </div>
       <div>
         <h3 class="col">Education</h3>
         <ul class="tl">
-          <li class="reveal"><div class="when">2021 – 2025</div><h3>PhD, Statistics</h3><p>SKUAST-Kashmir · CGPA 8.94/10. Thesis on forecasting horticultural market prices with statistical, machine-learning and ensemble models.</p></li>
-          <li class="reveal"><div class="when">2018 – 2021</div><h3>MSc, Statistics</h3><p>SKUAST-Kashmir · CGPA 7.79/10</p></li>
-          <li class="reveal"><div class="when">2014 – 2018</div><h3>BSc, Forestry</h3><p>SKUAST-Kashmir · CGPA 7.42/10</p></li>
+          <li class="reveal"><div class="when">2021 – 2025</div><h3>PhD, Statistics</h3><div class="org">SKUAST-Kashmir · First Division (89.35%)</div><p>Thesis: <i>Machine Learning Techniques for Apple Price Forecasting</i>. Twelve statistical, ML, deep-learning and ensemble models compared across six Indian markets. Advisor: Prof. Imran Khan.</p></li>
+          <li class="reveal"><div class="when">2018 – 2021</div><h3>MSc, Statistics</h3><div class="org">SKUAST-Kashmir · First Division (77.90%)</div><p>Thesis: <i>Statistical Modeling and Distribution Patterns Assessment of Major Conifers in Shopian Forest Division of Kashmir</i>.</p></li>
+          <li class="reveal"><div class="when">2014 – 2018</div><h3>BSc, Forestry</h3><div class="org">SKUAST-Kashmir · First Division (74.23%)</div><p>Field grounding in forest ecology and mensuration, where my interest in modelling began.</p></li>
+        </ul>
+        <h3 class="col" style="margin-top:10px">Professional development</h3>
+        <ul class="plain">
+          <li><b>MSME Management Development Programmes</b>: Business Analytics with R; Data Science Techniques and Tools for Business Management</li>
+          <li><b>Data Science Techniques and Tools</b>: SKUAST-K & NAHEP, May 2022</li>
+          <li><b>Data Science using R</b>: SKUAST-K LISA, 2021</li>
         </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- TEACHING -->
+<!-- TEACHING & SERVICE -->
 <section id="teaching">
   <div class="wrap">
-    <div class="kicker">Teaching</div>
+    <div class="kicker">Teaching, training & service</div>
     <h2>Decision first, picture before formula</h2>
-    <p class="lede">I start every method from a decision someone has to make, show it on real data, and check understanding as we go.</p>
-    <div class="cards">
-      <article class="card reveal"><div class="venue">SKUAST-K · 2023–24</div><h3>Statistics & data-analysis classes</h3><p>Taught every concept on real data, so students did the analysis themselves instead of memorising formulas.</p></article>
-      <article class="card reveal"><div class="venue">INVITED LECTURES · 2025</div><h3>"Basic Time Series Analysis Using R" · "Smart Farming with Smart Data"</h3><p>Winter School (Dec 2025) and an HADP capacity-building programme (Jul–Aug 2025). The approach: plot it, spot it, then name it.</p></article>
+    <p class="lede">I start every method from a real question, show it on real data, and check understanding as we go. Students stop fearing statistics when they do the analysis themselves.</p>
+    <div class="cards three">
+      <article class="card reveal"><div class="venue">SKUAST-Kashmir · Jul 2023 – Dec 2024</div><h3>Teaching Assistant / Co-Instructor</h3><p>Tutorials, practical sessions, lecture support, mentoring and evaluation for UG and PG courses:</p><div class="tags"><span class="tag">Statistical Methods for Applied Sciences</span><span class="tag">Data Analysis using Statistical Packages</span><span class="tag">Statistical Computing</span><span class="tag">Engineering Mathematics-I</span><span class="tag">Mathematics-I</span></div></article>
+      <article class="card reveal"><div class="venue">Invited lecture · Dec 2025</div><h3>Basic Time Series Analysis Using R</h3><p>A 10-day Winter School on Data-Driven AI and Analysis Using SPSS & R (online). It covers the full workflow from plotting to ARIMA forecasting, and the lecture code is public.</p><div class="tags"><span class="tag">R</span><span class="tag">ARIMA</span></div><a class="go" href="https://github.com/DeepStatistix/Basic-Time-Series" target="_blank" rel="noopener">Lecture code →</a></article>
+      <article class="card reveal"><div class="venue">Invited lecture · Jul – Aug 2025</div><h3>Smart Farming with Smart Data</h3><p>AI, forecasting and market intelligence in agriculture, delivered to a capacity-building programme for Rural Business Service Hubs (HADP).</p><div class="tags"><span class="tag">AI literacy</span><span class="tag">Market intelligence</span></div></article>
     </div>
-    <p style="margin-top:22px;color:var(--ink-2)"><b style="color:var(--ink)">Courses I can offer:</b> Business Statistics · Business Analytics with Python and R · Business Forecasting & Predictive Analytics · Machine Learning for Business Decisions · Research Methods & Design of Experiments · Time-Series Econometrics · Statistical Learning</p>
+    <div class="two" style="margin-top:34px">
+      <div>
+        <h3 class="col">Subjects I teach</h3>
+        <div class="tags"><span class="tag">Probability & Statistics</span><span class="tag">Regression & Multivariate Analysis</span><span class="tag">Design of Experiments</span><span class="tag">Sampling & Surveys</span><span class="tag">Time Series & Forecasting</span><span class="tag">Machine Learning</span><span class="tag">Statistical Learning</span><span class="tag">Data Analysis with R & Python</span><span class="tag">Business Analytics</span><span class="tag">Research Methods</span></div>
+      </div>
+      <div>
+        <h3 class="col">Academic service & coordination</h3>
+        <ul class="plain">
+          <li><span class="d">Jun – Jul 2025</span><b>Coordinator</b>, one-week capacity-building programme "Building Rural Entrepreneurs" (RBSH, HADP)</li>
+          <li><span class="d">Jul 2025</span><b>Co-coordinator</b>, "Catalyzing Agri-Transformation: Leadership, Branding & Market Power" (HADP)</li>
+          <li><span class="d">Feb 2025</span><b>Programme Coordinator</b>, Brand Bizz Fest 2025, Agricultural Branding Centre, SKUAST-K</li>
+          <li><span class="d">2025</span><b>Registered designs (India)</b>: Crop Quality Assessing AI Device (445043-001) and Crop Statistics Analyzing Computing Pad (473779-001), as co-inventor</li>
+        </ul>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- SKILLS -->
-<section id="skills">
+<section id="skills" class="alt">
   <div class="wrap">
     <div class="kicker">Toolkit</div>
-    <h2>Methods & tools</h2>
+    <h2>Skills & tools</h2>
     <div class="skills" style="margin-top:1.6rem">
-      <div class="reveal"><h3>Forecasting</h3><div class="tags"><span class="tag">ARIMA / SARIMA</span><span class="tag">TBATS</span><span class="tag">Prophet</span><span class="tag">LSTM</span><span class="tag">Transformers</span><span class="tag">Graph attention</span></div></div>
-      <div class="reveal"><h3>Statistics</h3><div class="tags"><span class="tag">Design of experiments</span><span class="tag">Mixed models</span><span class="tag">Regression</span><span class="tag">Extreme values</span><span class="tag">DM tests</span><span class="tag">Prediction intervals</span></div></div>
-      <div class="reveal"><h3>Machine learning</h3><div class="tags"><span class="tag">XGBoost</span><span class="tag">Random forest</span><span class="tag">Stacking</span><span class="tag">CNNs</span><span class="tag">NLP</span></div></div>
-      <div class="reveal"><h3>Tools</h3><div class="tags"><span class="tag">Python</span><span class="tag">R</span><span class="tag">SQL</span><span class="tag">PyTorch</span><span class="tag">TensorFlow</span><span class="tag">FastAPI</span><span class="tag">Git</span></div></div>
+      <div class="reveal"><h3>Programming</h3><div class="tags"><span class="tag">Python</span><span class="tag">R</span><span class="tag">SQL</span><span class="tag">pandas</span><span class="tag">NumPy</span><span class="tag">SciPy</span></div></div>
+      <div class="reveal"><h3>Statistics</h3><div class="tags"><span class="tag">Inference</span><span class="tag">Regression</span><span class="tag">DoE & ANOVA</span><span class="tag">Mixed models</span><span class="tag">Extreme values</span><span class="tag">DM & MCS tests</span><span class="tag">SPSS</span></div></div>
+      <div class="reveal"><h3>Machine learning</h3><div class="tags"><span class="tag">scikit-learn</span><span class="tag">XGBoost / LightGBM</span><span class="tag">Ensembles</span><span class="tag">statsmodels</span><span class="tag">Clustering</span><span class="tag">Anomaly detection</span></div></div>
+      <div class="reveal"><h3>Deep learning, NLP & vision</h3><div class="tags"><span class="tag">PyTorch</span><span class="tag">TensorFlow / Keras</span><span class="tag">LSTM</span><span class="tag">Transformers</span><span class="tag">GNNs</span><span class="tag">CNNs</span><span class="tag">spaCy</span><span class="tag">NLTK</span></div></div>
+      <div class="reveal"><h3>MLOps & deployment</h3><div class="tags"><span class="tag">FastAPI</span><span class="tag">Flask</span><span class="tag">Docker</span><span class="tag">CI/CD</span><span class="tag">MLflow</span><span class="tag">Git</span><span class="tag">RAG</span></div></div>
+      <div class="reveal"><h3>Data & visualisation</h3><div class="tags"><span class="tag">PostgreSQL</span><span class="tag">Spark</span><span class="tag">Hadoop</span><span class="tag">Power BI</span><span class="tag">Tableau</span><span class="tag">Matplotlib</span><span class="tag">Seaborn</span></div></div>
     </div>
   </div>
 </section>
@@ -397,18 +491,19 @@ footer{padding:28px 0;color:var(--ink-2);font-size:.82rem;text-align:center;bord
 <section id="contact" class="contact">
   <div class="wrap">
     <div class="kicker">Get in touch</div>
-    <h2>Let's work on forecasts that matter.</h2>
-    <p class="lede" style="margin:0 auto">Open to research collaboration, teaching and consulting in forecasting, statistical learning and agricultural analytics.</p>
+    <h2>Let's work on something that matters.</h2>
+    <p class="lede" style="margin:0 auto">Open to research collaboration, teaching, statistical consulting and data-science projects.</p>
     <div class="btns">
       <a class="btn primary" href="mailto:maaqib90@gmail.com">maaqib90@gmail.com</a>
       <a class="btn" href="https://github.com/DeepStatistix" target="_blank" rel="noopener">GitHub</a>
       <a class="btn" href="https://www.linkedin.com/in/aqibgul" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="https://orcid.org/0009-0009-8770-6156" target="_blank" rel="noopener">ORCID</a>
     </div>
   </div>
 </section>
 </main>
 
-<footer>© <span id="yr">2026</span> Dr. Aqib Gul · Shalimar, Srinagar, Jammu & Kashmir</footer>
+<footer>© <span id="yr">2026</span> Dr. Aqib Gul · Srinagar, Jammu & Kashmir, India</footer>
 
 <script>
 // theme toggle (per-viewer preference only)
@@ -425,7 +520,7 @@ footer{padding:28px 0;color:var(--ink-2);font-size:.82rem;text-align:center;bord
 
 // fan chart: seeded seasonal series, forecast with widening 80/95% bands
 (function(){
-  var svg=document.getElementById('fanchart'),W=1000,H=170,nObs=70,nF=24,N=nObs+nF;
+  var svg=document.getElementById('fanchart'),W=1000,H=150,nObs=70,nF=24,N=nObs+nF;
   var seed=7;function rnd(){seed=(seed*16807)%2147483647;return seed/2147483647-.5;}
   function base(i){return 10+i*.04+2.4*Math.sin(i/6.2);}
   var y=[],v=0;for(var i=0;i<N;i++){v=.7*v+rnd()*1.2;y.push(base(i)+v);}
@@ -444,19 +539,30 @@ footer{padding:28px 0;color:var(--ink-2);font-size:.82rem;text-align:center;bord
   el('path',{d:band(1.96),fill:'var(--band1)','class':'fade'});
   el('path',{d:band(1.28),fill:'var(--band2)','class':'fade'});
   var p1=el('path',{d:line(obs),fill:'none',stroke:'var(--ink)','stroke-width':2,'vector-effect':'non-scaling-stroke','class':'draw'});
-  var p2=el('path',{d:line(f),fill:'none',stroke:'var(--teal)','stroke-width':2.5,'stroke-dasharray':'0','vector-effect':'non-scaling-stroke','class':'fade'});
+  el('path',{d:line(f),fill:'none',stroke:'var(--teal)','stroke-width':2.5,'vector-effect':'non-scaling-stroke','class':'fade'});
   p1.style.setProperty('--len',p1.getTotalLength()+2);
 })();
 
-// reveal on scroll + filters
+// reveal on scroll
 (function(){
-  var io='IntersectionObserver' in window?new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12}):null;
+  var io='IntersectionObserver' in window?new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.1}):null;
   document.querySelectorAll('.reveal').forEach(function(n){io?io.observe(n):n.classList.add('in');});
-  var bs=document.querySelectorAll('.filters button');
-  bs.forEach(function(b){b.addEventListener('click',function(){
-    bs.forEach(function(x){x.classList.remove('on')});b.classList.add('on');var f=b.dataset.f;
-    document.querySelectorAll('#pubs li').forEach(function(li){li.style.display=(f==='all'||li.dataset.k===f)?'':'none';});
-  });});
+})();
+
+// filters: projects and publications (publications collapse to 10 until "Show all")
+(function(){
+  function setup(barId,itemSel,limit,moreId){
+    var bar=document.getElementById(barId),items=[].slice.call(document.querySelectorAll(itemSel)),more=moreId&&document.getElementById(moreId),f='all',open=!limit;
+    // counts on each filter button
+    bar.querySelectorAll('button').forEach(function(b){var k=b.dataset.f,n=k==='all'?items.length:items.filter(function(it){return it.dataset.k.split(' ').indexOf(k)>-1}).length;b.insertAdjacentHTML('beforeend','<span>'+n+'</span>');});
+    function apply(){var shown=0;items.forEach(function(it){var ok=f==='all'||it.dataset.k.split(' ').indexOf(f)>-1;if(ok)shown++;it.style.display=ok&&(open||shown<=limit)?'':'none';});
+      if(more){var total=items.filter(function(it){return f==='all'||it.dataset.k.split(' ').indexOf(f)>-1}).length;more.style.display=(!open&&total>limit)?'':'none';more.textContent='Show all '+total;}}
+    bar.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;bar.querySelectorAll('button').forEach(function(x){x.classList.remove('on')});b.classList.add('on');f=b.dataset.f;apply();});
+    if(more)more.addEventListener('click',function(){open=true;apply();});
+    apply();
+  }
+  setup('projFilters','#projects-grid .card',0);
+  setup('pubFilters','#pubs li',10,'pubMore');
 })();
 </script>
 </body>
